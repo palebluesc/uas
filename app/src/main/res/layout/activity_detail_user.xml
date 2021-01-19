@@ -7,7 +7,7 @@
     tools:context=".ui.detail.DetailUserActivity">
 
     <ImageView
-        android:id="@+id/iv_profile"
+        android:id="@+id/tv_profile"
         android:layout_width="82dp"
         android:layout_height="82dp"
         android:layout_marginTop="16dp"
@@ -21,12 +21,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         tools:text="TextView"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/iv_profile"
-        app:layout_constraintStart_toStartOf="@+id/iv_profile"
-        app:layout_constraintTop_toBottomOf="@+id/iv_profile" />
+        app:layout_constraintEnd_toEndOf="@+id/tv_profile"
+        app:layout_constraintStart_toStartOf="@+id/tv_profile"
+        app:layout_constraintTop_toBottomOf="@+id/tv_profile" />
 
     <TextView
         android:id="@+id/tv_username"
@@ -49,25 +49,26 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_username">
 
         <TextView
-            android:id="@+id/tc_followers"
+            android:id="@+id/tv_followers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
             android:gravity="center_vertical"
             android:textColor="@color/black"
             android:textSize="14sp"
-            app:drawableStartCompat="@drawable/ic_people"
+            app:drawableStartCompat="@drawable/ic_baseline_people_outline"
             tools:text="9 Followers" />
 
         <TextView
-            android:id="@+id/tc_following"
+            android:id="@+id/tv_following"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
             android:textColor="@color/black"
             android:textSize="14sp"
-            app:drawableStartCompat="@drawable/ic_people"
             tools:text="9 Following" />
+
     </LinearLayout>
 
     <com.google.android.material.tabs.TabLayout
@@ -89,5 +90,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tabs" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

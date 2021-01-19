@@ -7,25 +7,25 @@
     android:layout_height="96dp">
 
     <ImageView
-        android:id="@+id/iv_user"
+        android:id="@+id/tv_avatar"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"  />
 
     <TextView
-        android:id="@+id/tv_username"
+        android:id="@+id/tv_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        tools:text="TextView"
+        android:layout_marginTop="16dp"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/iv_user"
-        app:layout_constraintStart_toEndOf="@+id/iv_user"
-        app:layout_constraintTop_toTopOf="@+id/iv_user" />
+        app:layout_constraintStart_toEndOf="@+id/tv_avatar"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="TextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
